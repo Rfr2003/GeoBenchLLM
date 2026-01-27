@@ -30,10 +30,10 @@ We used **google drive** to translate the entire dataset as we can directly tran
 
 ## Construct the data
 
-We then re-construct the translated data.
+We then re-construct the translated data. For some questions, the re-constuction will fail because of the translation. You will have to manually translate these questions.
 
 ```bash
-python extract.py --input_path PATH_TO_TRANSLATED_FILE.csv --ouput_path PATH_TO_OUTPUT_FILE.csv
+python construct_data.py --input_path PATH_TO_TRANSLATED_FILE.csv --ouput_path PATH_TO_OUTPUT_FILE.csv
 ```
 
 ## Sanity Check and conversion to Hugging Faces Dataset
