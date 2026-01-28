@@ -60,3 +60,13 @@ Thanks to the authors for their work. If you use this dataset, please cite their
     pages = "351--360",
 }
 
+@inproceedings{data-geography-original
+  dataset   = {Geography, original},
+  author    = {John M. Zelle and Raymond J. Mooney},
+  title     = {Learning to Parse Database Queries Using Inductive Logic Programming},
+  booktitle = {Proceedings of the Thirteenth National Conference on Artificial Intelligence - Volume 2},
+  year      = {1996},
+  pages     = {1050--1055},
+  location  = {Portland, Oregon},
+  url       = {http://dl.acm.org/citation.cfm?id=1864519.1864543},
+}
