@@ -16,6 +16,7 @@ Run the notebook **codes/join.ipynb**, to have the Hugging Faces dataset.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @misc{li2025gridroutebenchmarkllmbasedroute,
       title={GridRoute: A Benchmark for LLM-Based Route Planning with Cardinal Movement in Grid Environments}, 
       author={Kechen Li and Yaotian Tao and Ximing Wen and Quanwei Sun and Zifei Gong and Chang Xu and Xizhe Zhang and Tianbo Ji},
@@ -25,4 +26,4 @@ Thanks to the authors for their work. If you use this dataset, please cite their
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2505.24306}, 
 }
-
+```

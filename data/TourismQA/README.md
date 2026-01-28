@@ -4,7 +4,7 @@ This dataset aims to challenge systems on the task of answering Points-of-Intere
 
 ## Download Data
 
-We weren't able to generate the dataset from the original github repository. However, thanks to Li et al. who gave the dataset we were able to put ours hand on it. 
+We weren't able to generate the dataset from the original github repository. However, thanks to Li et al. who gave the dataset, we were able to put our hands on it. 
 You can download it [here](https://huggingface.co/lmlmcat/lamb-data/tree/main).
 
 Then extract the files in it.
@@ -17,6 +17,7 @@ Run the notebook **code/transform_generative.ipynb**, to have the Hugging Faces 
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```TeX
 @inproceedings{10.1145/3459637.3482320,
 author = {Contractor, Danish and Shah, Krunal and Partap, Aditi and Singla, Parag and Mausam, Mausam},
 title = {Answering POI-recommendation Questions using Tourism Reviews},
@@ -44,3 +45,4 @@ series = {CIKM '21}
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2401.02187}, 
 }
+```

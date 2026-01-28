@@ -16,10 +16,11 @@ Run the notebook **codes/create_dataset.ipynb**, to have the Hugging Faces datas
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @inproceedings{aghzal2024can,
   title={Can Large Language Models be Good Path Planners? A Benchmark and Investigation on Spatial-temporal Reasoning},
   author={Aghzal, Mohamed and Plaku, Erion and Yao, Ziyu},
   booktitle={ICLR 2024 Workshop on Large Language Model (LLM) Agents},
   year={2024}
 }
-
+```

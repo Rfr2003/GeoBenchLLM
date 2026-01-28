@@ -39,6 +39,7 @@ Run the notebook **code/to_HF.ipynb**, to have the Hugging Faces dataset.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @inproceedings{finegan-dollak-etal-2018-improving,
     title = "Improving Text-to-{SQL} Evaluation Methodology",
     author = "Finegan-Dollak, Catherine  and
@@ -70,3 +71,4 @@ Thanks to the authors for their work. If you use this dataset, please cite their
   location  = {Portland, Oregon},
   url       = {http://dl.acm.org/citation.cfm?id=1864519.1864543},
 }
+```

@@ -42,6 +42,7 @@ For that run the notebook **check_sanity.ipynb**.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @misc{huang2021retrieverreadermeetsscenariobasedmultiplechoice,
       title={When Retriever-Reader Meets Scenario-Based Multiple-Choice Questions}, 
       author={Zixian Huang and Ao Wu and Yulin Shen and Gong Cheng and Yuzhong Qu},
@@ -51,4 +52,4 @@ Thanks to the authors for their work. If you use this dataset, please cite their
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2108.13875}, 
 }
-
+```

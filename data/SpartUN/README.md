@@ -18,6 +18,7 @@ Run the notebook **codes/join.ipynb**, to have the Hugging Faces dataset.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @inproceedings{mirzaee-kordjamshidi-2022-transfer,
     title = "Transfer Learning with Synthetic Corpora for Spatial Role Labeling and Reasoning",
     author = "Mirzaee, Roshanak  and
@@ -31,4 +32,4 @@ Thanks to the authors for their work. If you use this dataset, please cite their
     pages = "6148--6165",
     abstract = "",
 }
-
+```

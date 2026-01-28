@@ -18,10 +18,11 @@ Run the notebook **codes/extract.ipynb**, to have the Hugging Faces dataset.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @article{yamada2023evaluating,
     title={Evaluating Spatial Understanding of Large Language Models},
     author={Yamada, Yutaro and Bao, Yihan and Lampinen, Andrew K and Kasai, Jungo and Yildirim, Ilker},
     journal={Transactions on Machine Learning Research},
     year={2024}
 }
-
+```

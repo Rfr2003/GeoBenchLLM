@@ -22,6 +22,7 @@ For that you'll need to run the notebook **code/to_HF.ipynb**.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @article{DBLP:journals/corr/NguyenRSGTMD16,
   author    = {Tri Nguyen and
                Mir Rosenberg and
@@ -51,4 +52,4 @@ title = {Place Questions and Human-Generated Answers: A Data Analysis Approach},
 isbn = {978-3-030-14745-7},
 doi = {10.1007/978-3-030-14745-7_1}
 }
-
+```

@@ -47,6 +47,7 @@ For that run the notebook **check_sanity.ipynb**.
 
 Thanks to the authors for their work. If you use this dataset, please cite their paper :
 
+```Tex
 @misc{huang2019geosqabenchmarkscenariobasedquestion,
       title={GeoSQA: A Benchmark for Scenario-based Question Answering in the Geography Domain at High School Level}, 
       author={Zixian Huang and Yulin Shen and Xiao Li and Yuang Wei and Gong Cheng and Lin Zhou and Xinyu Dai and Yuzhong Qu},
@@ -56,4 +57,4 @@ Thanks to the authors for their work. If you use this dataset, please cite their
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/1908.07855}, 
 }
-
+```
