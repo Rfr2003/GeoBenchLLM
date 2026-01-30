@@ -160,7 +160,7 @@ def clean_answer(answer, db_url):
     replicate = False
     a_type = None
     if answer == None:
-        return [], replicate, None
+        return [], replicate, []
     if isinstance(answer, dict):
         final_answer = [answer['boolean']]
         a_type = ['bool']
@@ -220,7 +220,7 @@ def create_csv(questions, answers, output_dir, db_url):
             continue
         data['question'].append(question['Question'])
         data['category'].append(question['Category'])
-        if ans_type != 'coord':
+        if len(ans_type) > 0 and ans_type[0] != 'coord':
             data['original_answer'].append(answer)
         else:
             # to avoid having a file too fat from unreadable data
