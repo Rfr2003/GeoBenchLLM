@@ -65,6 +65,8 @@ def parse_docs(cursor, args):
                     if qtype == 'regression':
                         for i in range(len(answer)):
                             answer[i] = float(answer[i])
+                        if len(set(answer)) <= 1:
+                            answer = list(set(answer))
                             
                     data['type'].append(qtype)
                     data['answer'].append(answer)
