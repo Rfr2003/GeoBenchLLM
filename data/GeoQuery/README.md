@@ -28,7 +28,7 @@ SELECT city.state_name FROM city WHERE city.population = (SELECT min(tmp.populat
 The next step is to query the database to get the answers to the questions. For that, run the script **code/query_db.py**.
 
 ```bash
-python3 query_db.py --db_path 'PATH_TO_DB' --train_file 'PATH_TO_TRAIN.txt' --dev_file 'PATH_TO_DEV.txt' --test_file 'PATH_TO_TEST.txt' --output_path 'PATH_TO_OUTPUT.csv'
+python3 query_db.py --db_path 'PATH_TO_DB' --train_file 'PATH_TO_TRAIN.txt' --dev_file 'PATH_TO_DEV.txt' --test_file 'PATH_TO_TEST.txt' --output_path 'PATH_TO_OUTPUT.json'
 ```
 
 ## Converting to HF dataset format

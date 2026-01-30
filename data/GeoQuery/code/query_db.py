@@ -12,7 +12,7 @@ def parse_args():
     parser.add_argument("--train_file", type=str, help="Path to the .txt file containing the train data")
     parser.add_argument("--dev_file", type=str, help="Path to the .txt file containing the dev data")
     parser.add_argument("--test_file", type=str, help="Path to the .txt file containing the test data")
-    parser.add_argument("--output_path", type=str, help="Path of the final .csv file")
+    parser.add_argument("--output_path", type=str, help="Path of the final .json file")
     
     args = parser.parse_args()
     return args
@@ -73,7 +73,7 @@ def parse_docs(cursor, args):
 
     
     df = pd.DataFrame(data)
-    df.to_csv(args.output_path, index=False)
+    df.to_json(args.output_path, orient="records", force_ascii=False, indent=4)
 
 if __name__ == '__main__':
     args = parse_args()

@@ -28,7 +28,7 @@ We also gave you an example for the configuration file for setting up GraphDB.
 
 First, run in parallel GraphDB.
 
-Once it's running, you can run the script **code/extract.py** to obtain the dataset with cleaned answers in a .csv format.
+Once it's running, you can run the script **code/extract.py** to obtain the dataset with cleaned answers in a .json format.
 
 ```bash
 python3 code/extract.py --output_dir 'PATH_TO_THE_OUTPUT_DIR' --data_dir 'PATH_TO_THE_DIR_CONTAINING_THE_DATA' --db_url 'http://localhost:7200/repositories/NAME_OF_THE_GRAPHDB_REPO'
