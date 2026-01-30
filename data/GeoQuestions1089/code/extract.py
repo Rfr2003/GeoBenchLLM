@@ -153,7 +153,7 @@ def clean_url(url, db_url):
             split = split[1:]
         if split[-1].isnumeric():
             split = split[:-1]
-        entity = " ".join(split)
+        entity = " ".join(split).replace('%27', "'")
     return entity
 
 def clean_answer(answer, db_url):
@@ -189,7 +189,7 @@ def clean_answer(answer, db_url):
                         new_answer = float(l)
                         a_type.append('numeric')
                     elif detected_type == AnswerType.STR:
-                        new_answer = l
+                        new_answer = l.replace('%27', "'")
                         a_type.append('str')
                     else:
                         new_answer = None
@@ -225,17 +225,6 @@ def create_csv(questions, answers, output_dir, db_url):
         else:
             # to avoid having a file too fat from unreadable data
             data['original_answer'].append(None)
-        '''
-        if rep:
-            a = cleaned_answers[int(cleaned_answer)-1]
-            cat = questions[int(cleaned_answer)-1]['Category']
-            a_type = a_types[int(cleaned_answer)-1]
-            print(str(cleaned_answer), cat)
-        else:
-            a = cleaned_answer
-            cat = question['Category']
-            a_type = ans_type
-        '''
         a = cleaned_answer
         cat = question['Category']
         a_type = ans_type
@@ -243,7 +232,7 @@ def create_csv(questions, answers, output_dir, db_url):
         data['answer_type'].append(a_type)
 
     df = pd.DataFrame(data)
-    df.to_csv(os.path.join(output_dir, "dataset.csv"), index=False)
+    df.to_json(os.path.join(output_dir, "dataset.json"), orient="records", force_ascii=False, indent=4)
 
 if __name__ == '__main__':
     args = parse_args()
