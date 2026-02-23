@@ -1,0 +1,8 @@
+model: LLama-3.1
+
+modes:
+  non_thinking:
+    temperature: 0.6
+    top_p: 0.9
+    top_k: -1
+    presence_penalty: 0.0
