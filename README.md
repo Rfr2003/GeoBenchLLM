@@ -2,17 +2,17 @@
 
 ## 🌍 What is it ?
 
-**GeoBenchmark** is a very accessible and complete benchmark to assess LLMs abilities across **8 geo-related tasks**. We also provide an **easy framework** to evaluate models.
+**GeoBenchmark** is a very accessible and complete benchmark to assess LLMs abilities across **17 subdatasets** divided into **8 geo-related tasks**. We also provide an **easy framework** to evaluate models.
 
 The datasets and metrics are available at our **Hugging Face** page : <https://huggingface.co/collections/rfr2003/geobenchmark>.
 
 ## 📁 Codes Structure
 
-- data/            # codes for reproducing each dataset. Check the directories inside this folder for more information.
-- src/             # codes for inference and evaluation.
-- configs/         # LLM's configs used for the results shown in our paper.
-- gens/            # the model generations that we obtained.
-- example.ipynb    # a script to rapidly infer on a dataset and evaluate.
+- **data/**            # codes for reproducing each dataset. Check the directories inside this folder for more information.
+- **src/**             # codes for inference and evaluation.
+- **configs/**         # LLM's configs used for the results shown in our paper.
+- **gens/**            # the model generations that we obtained.
+- **example.ipynb**    # a script to rapidly infer on a dataset and evaluate.
 
 ## 🔧 Installation
 
@@ -52,7 +52,7 @@ python -m src.eval_gens \
     --model_name="Qwen/Qwen3-8B" \
     --dataset_name "GeoSQA" \ #Specify "all" to infer on all datasets
     --output_dir './evals' \
-    --gens_path './gens'
+    --gens_path './gens' \
     --verbose 
 ```
 
@@ -64,7 +64,7 @@ You can also specify these parameters:
 
 ## 📄 Datasets Information
 
-| Category        | Tasks                  | Datasets                                 | Train                 | Dev                 | Test                      |
+| Cogn.Lvl        | Tasks                  | Datasets                                 | Train                 | Dev                 | Test                      |
 | --------------- | ---------------------- | ---------------------------------------- | --------------------- | ------------------- | ------------------------- |
 | **Knowledge**   | Coordinates Prediction | GeoQuestions1089_coord                        | –                     | –                   | 87                        |
 |                 | Yes/No questions       | GeoQuestions1089_YN                         | –                     | –                   | 181                       |
