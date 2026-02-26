@@ -48,7 +48,7 @@ def parse_args_api():
 
 def parse_args_eval():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_name", type=str, default="Qwen/Qwen3-0.6B", choices=["meta-llama/Llama-3.1-8B-Instruct", "Qwen/Qwen3-0.6B", "Qwen/Qwen3-1.7B", "Qwen/Qwen3-4B-Instruct-2507", "Qwen/Qwen3-8B", "mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3", "mistralai/Ministral-8B-Instruct-2410", "openai/gpt-oss-120b"])
+    parser.add_argument("--model_name", type=str, default="Qwen/Qwen3-0.6B", choices=["meta-llama/Llama-3.1-8B-Instruct", "Qwen/Qwen3-0.6B", "Qwen/Qwen3-1.7B", "Qwen/Qwen3-4B-Instruct-2507", "Qwen/Qwen3-8B", "mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3", "mistralai/Ministral-8B-Instruct-2410", "openai/gpt-oss-120b", "openai/gpt-oss-20b"])
     parser.add_argument("--dataset_name", type=str, nargs='+', default=["GeoSQA"], choices=["GeoQuery_place", "GeoQuery_regression", "GeoQuestions1089_regression", "GeoQuestions1089_coord", "GeoQuestions1089_place", "GeoQuestions1089_YN", "GeoSQA", "GKMC", "GridRoute", "MsMarco", "NY-POI", "PPNL_multi", "PPNL_single", "SpartUN", "SpatialEvalLLM", "StepGame", "TourismQA", "all"])
 
     parser.add_argument("--verbose", action='store_true')

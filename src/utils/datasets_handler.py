@@ -12,7 +12,7 @@ class DataSet():
     def __init__(self, name, tokenizer=None):
         self.name = name
         self.max_tokens = 100
-        self.dataset = datasets.load_dataset("rfr2003/Geo_Benchmark", self.name)
+        self.dataset = datasets.load_dataset("rfr2003/GeoBenchLLM", self.name)
         self.tokenizer = tokenizer
         self.op = operator.gt
         self.metric = "accuracy"

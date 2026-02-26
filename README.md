@@ -1,10 +1,10 @@
-# GeoBenchmark
+# GeoBenchLLM
 
 ## 🌍 What is it ?
 
-**GeoBenchmark** is a very accessible and complete benchmark to assess LLMs abilities across **17 subdatasets** divided into **8 geo-related tasks**. We also provide an **easy framework** to evaluate models.
+**GeoBenchLLM** is a very accessible and complete benchmark to assess LLMs abilities across **17 subdatasets** divided into **8 geo-related tasks**. We also provide an **easy framework** to evaluate models.
 
-The datasets and metrics are available at our **Hugging Face** page : <https://huggingface.co/collections/rfr2003/geobenchmark>.
+The benchmark and metrics are available at our **Hugging Face** page : <https://huggingface.co/collections/rfr2003/geobenchllm>.
 
 ## 📁 Codes Structure
 
@@ -21,6 +21,14 @@ Install Python dependencies.
 ```bash
 pip install -r requirements.txt
 ```
+
+## 🤓 Replicate the data
+
+To replicate the datasets used in **GeoBenchLLM**, please refer to the directories in **data/**. You'll see a directory for each of the 12 datasets belonging to our benchmark. Each directory contains the code and the instructions needed to replicate the corresponding dataset.
+
+## 🧪 Demo
+
+To have a quick demo on how to retrieve the datasets, generate with a small LLM and evaluate the results with our handmade metrics, you can run the **example.ipynb** notebook.
 
 ## 🦾 Inference
 
