@@ -1,4 +1,4 @@
-# GeoBenchLLM
+# GeoBenchLLM: A comprehensive benchmark for probing LLM on geo-related tasks
 
 ## 🌍 What is it ?
 
@@ -32,7 +32,8 @@ To have a quick demo on how to retrieve the datasets, generate with a small LLM 
 
 ## 🦾 Inference
 
-We provide a script for inference. Here is an example of how ot run it:
+We provide a script for inference. We use [VLLM](https://github.com/vllm-project/vllm) for fast inference. 
+Here is an example of how ot run it:
 
 ```bash
 python -m src.infer \
@@ -58,7 +59,7 @@ We provide a script for evaluating the genrations obtained after the last step. 
 ```bash
 python -m src.eval_gens \
     --model_name="Qwen/Qwen3-8B" \
-    --dataset_name "GeoSQA" \ #Specify "all" to infer on all datasets
+    --dataset_name "GeoSQA" \ #Specify "all" to evaluate all datasets
     --output_dir './evals' \
     --gens_path './gens' \
     --verbose 
@@ -72,7 +73,7 @@ You can also specify these parameters:
 
 ## 📄 Datasets Information
 
-| Cogn.Lvl        | Tasks                  | Datasets                                 | Train                 | Dev                 | Test                      |
+| Cogn.Lvl        | Tasks                  | SubDatasets                                 | Train                 | Dev                 | Test                      |
 | --------------- | ---------------------- | ---------------------------------------- | --------------------- | ------------------- | ------------------------- |
 | **Knowledge**   | Coordinates Prediction | GeoQuestions1089_coord                        | –                     | –                   | 87                        |
 |                 | Yes/No questions       | GeoQuestions1089_YN                         | –                     | –                   | 181                       |
@@ -90,4 +91,8 @@ You can also specify these parameters:
 ## 💬 Citation
 
 If you use this benchmark, please cite our paper.
+
+## 📨 Contact
+
+If you have any questions or just want to discuss about this work, feel free to contact: Rodrigo Ferreira Rodrigues (<rodrigo.ferreira-rodrigues@utoulouse.fr>)
 
