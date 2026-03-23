@@ -1,5 +1,17 @@
 # GeoBenchLLM: A comprehensive benchmark for probing LLM on geo-related tasks
 
+<div align="center">
+    <br>
+    <img align="center" src="./geobenchllm_logo" alt="GeoBenchLLM" width="400"/>
+    <br><br>
+    <strong>A comprehensive benchmark for probing LLM on geo-related tasks</strong>
+    <br><br>
+    <a href="https://arxiv.org/abs/YOUR_PAPER_ID"><img src="https://img.shields.io/badge/Paper-CIKM%202026-green"/></a>
+    <a href="https://huggingface.co/collections/rfr2003/geobenchllm"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow"/></a>
+</div>
+
+---
+
 ## 🌍 What is it ?
 
 **GeoBenchLLM** is a very accessible and complete benchmark to assess LLMs abilities across **17 subdatasets** divided into **8 geo-related tasks**. We also provide an **easy framework** to evaluate models.
@@ -26,11 +38,6 @@ Or with conda:
 
 ```bash
 conda env create -f environment.yml
-```
-
-Then:
-
-```bash
 conda activate geobench
 ```
 
@@ -52,7 +59,7 @@ python -m src.infer \
     --model_name="Qwen/Qwen3-8B" \
     --dataset_name "GeoSQA" \ #Specify "all" to infer on all datasets
     --output_dir './gens' \
-    --config_path './configs/qwen.yaml'
+    --config_path './configs/qwen.yaml' \
     --verbose \
     --batch_size 32
 ```
@@ -61,12 +68,12 @@ You can also specify these parameters:
 - **think_mode**: Activates thinking mode.
 - **evaluate**: Also evaluates at the end of inference.
 - **sample**: Activates sampling.
-- **n_samples**: Specify the number of samples.
+- **n_samples**: Specifies the number of samples.
 - **max_model_len**: Specifies the max length used by VLLM (requires more VRAM).
 
 ## 🦿 Evaluating
 
-We provide a script for evaluating the genrations obtained after the last step. Here is an example of how ot run it:
+We provide a script for evaluating the generations obtained after the last step. Here is an example of how to run it:
 
 ```bash
 python -m src.eval_gens \
@@ -80,8 +87,8 @@ python -m src.eval_gens \
 You can also specify these parameters:
 - **think_mode**: Activates thinking mode.
 - **sample**: Activates sampling.
-- **n_samples**: Specify the number of samples.
-- **force_eval**: Re-run the evaluation even if a file containing the results for the right setting exists.
+- **n_samples**: Specifies the number of samples.
+- **force_eval**: Re-runs the evaluation even if a file containing the results for the right setting already exists.
 
 ## 📄 Datasets Information
 
