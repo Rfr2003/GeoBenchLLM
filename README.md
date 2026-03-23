@@ -16,10 +16,22 @@ The benchmark and metrics are available at our **Hugging Face** page : <https://
 
 ## 🔧 Installation
 
-Install Python dependencies.
+Install Python dependencies (we used Python 3.12.11).
 
 ```bash
 pip install -r requirements.txt
+```
+
+Or with conda:
+
+```bash
+conda env create -f environment.yml
+```
+
+Then:
+
+```bash
+conda activate geobench
 ```
 
 ## 🤓 Replicate the data

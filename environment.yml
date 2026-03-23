@@ -1,4 +1,4 @@
-name: geob
+name: geobench
 channels:
   - defaults
 dependencies:
@@ -20,12 +20,15 @@ dependencies:
   - libzlib=1.3.1=hb25bd0a_0
   - ncurses=6.5=h7934f7d_0
   - openssl=3.5.5=h1b28b03_0
-  - packaging=25.0=py312h06a4308_1
+  - pip=26.0.1=pyhc872135_0
   - pthread-stubs=0.3=h0ce48e5_1
   - python=3.12.11=h22baa00_0
   - readline=8.3=hc2a1206_0
+  - setuptools=80.10.2=py312h06a4308_0
   - sqlite=3.51.2=h3e8d24a_0
   - tk=8.6.15=h54e0aa7_0
+  - tzdata=2026a=he532380_0
+  - wheel=0.46.3=py312h06a4308_0
   - xorg-libx11=1.8.12=h9b100fa_1
   - xorg-libxau=1.0.12=h9b100fa_0
   - xorg-libxdmcp=1.1.5=h9b100fa_0
@@ -33,155 +36,86 @@ dependencies:
   - xz=5.8.2=h448239c_0
   - zlib=1.3.1=hb25bd0a_0
   - pip:
-      - absl-py==2.3.1
       - aiohappyeyeballs==2.6.1
       - aiohttp==3.13.3
       - aiosignal==1.4.0
       - annotated-doc==0.0.4
       - annotated-types==0.7.0
       - anthropic==0.86.0
-      - anyio==4.11.0
+      - anyio==4.12.1
       - apache-tvm-ffi==0.1.9
-      - arrow==1.4.0
-      - asttokens==3.0.0
-      - attrs==25.3.0
-      - authlib==1.6.5
-      - beartype==0.22.6
-      - beautifulsoup4==4.14.2
+      - attrs==26.1.0
       - bert-score==0.3.13
-      - binaryornot==0.4.4
-      - bioc==2.1
       - blake3==1.0.8
-      - blinker==1.9.0
-      - blis==1.3.0
-      - bm25s==0.2.14
-      - boto3==1.40.44
-      - botocore==1.40.44
-      - cachetools==6.2.2
-      - catalogue==2.0.10
+      - cachetools==7.0.5
       - cbor2==5.9.0
-      - certifi==2025.8.3
+      - certifi==2026.2.25
       - cffi==2.0.0
-      - chardet==5.2.0
-      - charset-normalizer==3.4.3
-      - click==8.3.0
-      - cloudpathlib==0.22.0
+      - charset-normalizer==3.4.6
+      - click==8.3.1
       - cloudpickle==3.1.2
-      - coloredlogs==15.0.1
-      - comm==0.2.3
       - compressed-tensors==0.13.0
-      - confection==0.1.5
-      - conllu==4.5.3
       - contourpy==1.3.3
-      - cookiecutter==2.6.0
-      - cryptography==46.0.3
+      - cryptography==46.0.5
       - cuda-bindings==12.9.4
       - cuda-pathfinder==1.4.3
       - cuda-python==12.9.4
-      - curated-tokenizers==0.0.9
-      - curated-transformers==0.1.1
       - cycler==0.12.1
-      - cyclopts==4.3.0
-      - cymem==2.0.11
-      - cython==3.2.1
-      - debugpy==1.8.17
-      - decorator==5.2.1
-      - deprecated==1.2.18
+      - datasets==4.8.3
       - depyf==0.20.0
-      - dill==0.4.0
-      - docopt==0.6.2
+      - dill==0.4.1
       - docstring-parser==0.17.0
-      - docutils==0.22.3
       - einops==0.8.2
-      - exceptiongroup==1.3.1
-      - executing==2.2.1
-      - fastapi==0.122.0
+      - fastapi==0.135.1
       - fastapi-cli==0.0.24
       - fastapi-cloud-cli==0.15.0
       - fastar==0.9.0
-      - fastmcp==2.13.1
-      - filelock==3.19.1
-      - flair==0.15.1
+      - filelock==3.25.2
       - flashinfer-python==0.6.6
-      - flask==3.1.2
-      - flatbuffers==25.9.23
-      - fonttools==4.60.1
-      - frozenlist==1.7.0
-      - fsspec==2025.9.0
-      - ftfy==6.3.1
-      - gdown==5.2.0
-      - geographiclib==2.1
-      - geopy==2.4.1
+      - fonttools==4.62.1
+      - frozenlist==1.8.0
+      - fsspec==2026.2.0
       - gguf==0.18.0
       - googleapis-common-protos==1.73.0
       - grpcio==1.78.0
-      - gurobipy==12.0.3
       - h11==0.16.0
+      - hf-xet==1.4.2
       - httpcore==1.0.9
       - httptools==0.7.1
       - httpx==0.28.1
       - httpx-sse==0.4.3
-      - huggingface-hub==0.35.3
-      - humanfriendly==10.0
-      - idna==3.10
+      - huggingface-hub==0.36.2
+      - idna==3.11
       - ijson==3.5.0
       - importlib-metadata==8.7.1
-      - intervaltree==3.1.0
-      - ipykernel==6.30.1
-      - ipython==9.5.0
-      - ipython-pygments-lexers==1.1.1
-      - itsdangerous==2.2.0
-      - jaraco-classes==3.4.0
-      - jaraco-context==6.0.1
-      - jaraco-functools==4.3.0
-      - jedi==0.19.2
-      - jeepney==0.9.0
-      - jiter==0.12.0
-      - jmespath==1.0.1
-      - joblib==1.5.2
-      - jsonlines==4.0.0
-      - jsonschema==4.25.1
-      - jsonschema-path==0.3.4
+      - jiter==0.13.0
+      - jmespath==1.1.0
+      - jsonschema==4.26.0
       - jsonschema-specifications==2025.9.1
-      - jupyter-client==8.6.3
-      - jupyter-core==5.8.1
-      - keyring==25.7.0
-      - kiwisolver==1.4.9
-      - langcodes==3.5.0
-      - langdetect==1.0.9
-      - language-data==1.3.0
+      - kiwisolver==1.5.0
       - llguidance==1.3.0
       - loguru==0.7.3
-      - lxml==6.0.2
-      - marisa-trie==1.3.1
       - markdown-it-py==4.0.0
       - markupsafe==3.0.3
-      - matplotlib==3.10.6
-      - matplotlib-inline==0.1.7
-      - mcp==1.22.0
+      - matplotlib==3.10.8
+      - mcp==1.26.0
       - mdurl==0.1.2
       - mistral-common==1.10.0
       - model-hosting-container-standards==0.1.14
-      - more-itertools==10.8.0
-      - mpld3==0.5.11
       - mpmath==1.3.0
       - msgspec==0.20.0
-      - multidict==6.6.4
-      - murmurhash==1.0.13
-      - nest-asyncio==1.6.0
-      - networkx==3.5
+      - multidict==6.7.1
+      - multiprocess==0.70.19
+      - networkx==3.6.1
       - ninja==1.13.0
-      - nltk==3.9.2
       - nvidia-cudnn-frontend==1.18.0
       - nvidia-cutlass-dsl==4.4.2
       - nvidia-cutlass-dsl-libs-base==4.4.2
       - nvidia-ml-py==13.595.45
       - nvidia-nccl-cu12==2.27.5
       - nvidia-nvshmem-cu12==3.4.5
-      - onnxruntime==1.23.0
-      - openai==2.8.1
+      - openai==2.24.0
       - openai-harmony==0.0.8
-      - openapi-pydantic==0.5.1
       - opencv-python-headless==4.13.0.92
       - opentelemetry-api==1.40.0
       - opentelemetry-exporter-otlp==1.40.0
@@ -192,119 +126,68 @@ dependencies:
       - opentelemetry-sdk==1.40.0
       - opentelemetry-semantic-conventions==0.61b0
       - opentelemetry-semantic-conventions-ai==0.5.0
-      - pandas==2.3.2
-      - parso==0.8.5
+      - packaging==26.0
+      - pandas==3.0.1
       - partial-json-parser==0.2.1.1.post7
-      - pathable==0.4.4
-      - pathvalidate==3.3.1
-      - pexpect==4.9.0
-      - pillow==11.3.0
-      - pip==25.2
-      - platformdirs==4.4.0
-      - pptree==3.1
-      - preshed==3.0.10
+      - pillow==12.1.1
       - prometheus-client==0.24.1
-      - prompt-toolkit==3.0.52
-      - propcache==0.3.2
+      - propcache==0.4.1
       - protobuf==6.33.6
-      - psutil==7.1.0
-      - ptyprocess==0.7.0
-      - pure-eval==0.2.3
-      - py-key-value-aio==0.2.8
-      - py-key-value-shared==0.2.8
+      - psutil==7.2.2
+      - pyarrow==23.0.1
       - pybase64==1.4.3
       - pycountry==26.2.16
-      - pycparser==2.23
+      - pycparser==3.0
       - pydantic==2.12.5
       - pydantic-core==2.41.5
       - pydantic-extra-types==2.11.1
-      - pydantic-settings==2.12.0
+      - pydantic-settings==2.13.1
       - pygments==2.19.2
-      - pyjnius==1.7.0
-      - pyjwt==2.10.1
-      - pyparsing==3.2.5
-      - pyperclip==1.11.0
-      - pyproj==3.7.2
-      - pyserini==1.3.0
-      - pysocks==1.7.1
+      - pyjwt==2.12.1
+      - pyparsing==3.3.2
       - python-dateutil==2.9.0.post0
-      - python-dotenv==1.2.1
+      - python-dotenv==1.2.2
       - python-json-logger==4.0.0
-      - python-slugify==8.0.4
-      - pytorch-revgrad==0.2.0
-      - pytz==2025.2
+      - python-multipart==0.0.22
       - pyyaml==6.0.3
       - pyzmq==27.1.0
       - quack-kernels==0.3.5
       - rapidfuzz==3.14.3
-      - rdflib==7.2.1
-      - referencing==0.36.2
-      - regex==2025.9.18
+      - referencing==0.37.0
+      - regex==2026.2.28
       - requests==2.32.5
-      - rich==14.1.0
-      - rich-rst==1.3.2
+      - rich==14.3.3
       - rich-toolkit==0.19.7
       - rignore==0.7.6
-      - rouge-score==0.1.2
-      - rpds-py==0.29.0
-      - s3transfer==0.14.0
-      - safetensors==0.6.2
-      - scikit-learn==1.7.2
-      - scipy==1.16.2
-      - secretstorage==3.5.0
-      - segtok==1.5.11
+      - rpds-py==0.30.0
+      - safetensors==0.7.0
       - sentry-sdk==2.55.0
-      - setuptools==80.9.0
-      - shapely==2.1.2
       - shellingham==1.5.4
       - six==1.17.0
-      - smart-open==7.3.1
       - sniffio==1.3.1
-      - sortedcontainers==2.4.0
-      - soupsieve==2.8
-      - spacy==3.8.7
-      - spacy-curated-transformers==0.3.1
-      - spacy-legacy==3.0.12
-      - spacy-loggers==1.0.5
-      - sparqlwrapper==2.0.0
-      - sqlitedict==2.1.0
-      - srsly==2.5.1
-      - sse-starlette==3.0.3
-      - stack-data==0.6.3
-      - starlette==0.50.0
+      - sse-starlette==3.3.3
+      - starlette==0.52.1
       - supervisor==4.3.0
-      - tabulate==0.9.0
-      - text-unidecode==1.3
-      - thinc==8.3.6
-      - threadpoolctl==3.6.0
+      - tabulate==0.10.0
       - tiktoken==0.12.0
       - tokenizers==0.22.2
       - torch==2.10.0
       - torch-c-dlpack-ext==0.1.5
       - torchaudio==2.10.0
       - torchvision==0.25.0
-      - tornado==6.5.2
-      - tqdm==4.67.1
-      - traitlets==5.14.3
-      - transformer-smaller-training-vocab==0.4.2
+      - tqdm==4.67.3
       - transformers==4.57.6
       - triton==3.6.0
-      - typer==0.19.2
+      - typer==0.24.1
       - typing-extensions==4.15.0
-      - tzdata==2025.2
-      - urllib3==2.5.0
-      - uvicorn==0.38.0
+      - urllib3==2.6.3
+      - uvicorn==0.42.0
       - uvloop==0.22.1
       - vllm==0.18.0
-      - wasabi==1.1.3
       - watchfiles==1.1.1
-      - wcwidth==0.2.14
-      - weasel==0.4.1
-      - werkzeug==3.1.3
-      - wheel==0.45.1
-      - wikipedia-api==0.8.1
-      - wrapt==1.17.3
+      - websockets==16.0
       - xgrammar==0.1.32
-      - yarl==1.20.1
+      - xxhash==3.6.0
+      - yarl==1.23.0
       - zipp==3.23.0
-prefix: /projects/iris/rferreir/miniconda3/envs/geob
+prefix: /projects/iris/rferreir/miniconda3/envs/geobench
