@@ -229,8 +229,7 @@ class DataSet_GeoQuestions1089_coord(DataSet):
     def __init__(self, tokenizer=None):
         super().__init__("GeoQuestions1089_coord", tokenizer=tokenizer)
         self.max_tokens = 20
-        self.op = operator.lt
-        self.metric = "median macro-mean"
+        self.metric = "coord_accuracy"
 
     def get_messages(self, row):
         messages = [

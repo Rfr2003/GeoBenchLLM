@@ -1,434 +1,189 @@
-absl-py==2.1.0
-accelerate==1.10.1
-aiohappyeyeballs @ file:///rapids/aiohappyeyeballs-2.4.4-py3-none-any.whl#sha256=a980909d50efcd44795c4afeca523296716d50cd756ddca6af8c65b996e27de8
-aiohttp @ file:///rapids/aiohttp-3.11.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=24213ba85a419103e641e55c27dc7ff03536c4873470c2478cce3311ba1eee7b
-aiosignal @ file:///rapids/aiosignal-1.3.2-py2.py3-none-any.whl#sha256=45cde58e409a301715980c2b01d0c28bdde3770d8290b5eb2173759d9acb31a5
-alembic==1.14.1
+aiohappyeyeballs==2.6.1
+aiohttp==3.13.3
+aiosignal==1.4.0
+annotated-doc==0.0.4
 annotated-types==0.7.0
-anyio==4.8.0
-apex @ file:///opt/pytorch/apex/dist/apex-0.1-cp312-cp312-linux_x86_64.whl#sha256=4d37fa7d4e5693dc41e838e1b4985bcbeec3ab2c83523690092576333bf65597
-argon2-cffi==23.1.0
-argon2-cffi-bindings==21.2.0
-arrow==1.3.0
-asciitree @ file:///rapids/asciitree-0.3.3-py3-none-any.whl#sha256=b50e35ae9ab56ea50407e4fe29f06f3d980564d8caace980c9d7b2c33f235f3b
+anthropic==0.86.0
+anyio==4.12.1
+apache-tvm-ffi==0.1.9
 astor==0.8.1
-asttokens==3.0.0
-astunparse==1.6.3
-async-generator==1.10
-async-lru==2.0.4
-attrs @ file:///rapids/attrs-24.2.0-py3-none-any.whl#sha256=81921eb96de3191c8258c199618104dd27ac608d9366f5e35d011eae1867ede2
-audioread==3.0.1
-Authlib==1.6.5
-babel==2.16.0
-batchspawner==1.3.0
-beartype==0.22.6
-beautifulsoup4==4.12.3
-beir==2.2.0
+attrs==26.1.0
 bert-score==0.3.13
-bitsandbytes==0.47.0
-black==24.10.0
-blake3==1.0.7
-bleach==6.2.0
-blinker==1.9.0
-blis==0.7.11
-cachetools==6.2.2
-catalogue==2.0.10
-cbor2==5.7.0
-certifi==2024.12.14
-certipy==0.2.1
-cffi==1.17.1
-charset-normalizer==3.4.1
-click @ file:///rapids/click-8.1.7-py3-none-any.whl#sha256=ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28
-cloudpathlib==0.20.0
-cloudpickle @ file:///rapids/cloudpickle-3.1.0-py3-none-any.whl#sha256=fe11acda67f61aaaec473e3afe030feb131d78a43461b718185363384f1ba12e
-cmake==3.31.4
-coloredlogs==15.0.1
-comm==0.2.2
-compressed-tensors==0.11.0
-confection==0.1.5
-contourpy==1.3.1
-cryptography==44.0.1
-cuda-python @ file:///rapids/cuda_python-12.6.2.post1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=1ccda3b9400dd6568b3db118aae1c783ef26f2457d6635197999fa42b46b5187
-cudf @ file:///rapids/cudf-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=05a831f0e2d7951d4c185c9ed6fcf7592466a48cb4005278ef78a106a5408689
-cudf-polars @ file:///rapids/cudf_polars-24.10.0-py3-none-any.whl#sha256=dfb72936118e8bcb1a5ddcb79658941b25b16c78f16c3e198f1a6d04f80c7e94
-cugraph @ file:///rapids/cugraph-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=4ecf0844761f905b03e325f77cf6cde3ba0bcb7458328630558f640cd04f89e0
-cugraph-dgl @ file:///rapids/cugraph_dgl-24.10.0-py3-none-any.whl#sha256=abefddf649e504d9e9b06b86308764e46840f3406cee36b5ebca61bc8af2206b
-cugraph-equivariant @ file:///rapids/cugraph_equivariant-24.10.0-py3-none-any.whl#sha256=7263015364f645a10db1d5b62348000de9384613ccd77bad9292180df261c7b7
-cugraph-pyg @ file:///rapids/cugraph_pyg-24.10.0-py3-none-any.whl#sha256=0d7409d7dd95032d518850bca09c9e065847353cdb0c0ec005c5f4dc12c7f0be
-cugraph-service-client @ file:///rapids/cugraph_service_client-24.10.0-py3-none-any.whl#sha256=38b0ff0a2e66005628d968915e5c7006b0510c9b639880ee844c387f9c28a2ad
-cugraph-service-server @ file:///rapids/cugraph_service_server-24.10.0-py3-none-any.whl#sha256=66532ceb7cdcc00e46ea820cb580e9c4de08e02c5bcd6ed667521565a5a8968c
-cuml @ file:///rapids/cuml-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=0bf82a8d9af8f56adc53566144bac46abb8014ec89321e1333716ab6108b5235
-cupy-cuda12x @ file:///rapids/cupy_cuda12x-13.2.0-cp312-cp312-linux_x86_64.whl#sha256=105abadcb9096887fe80d11304857d7169494e9aa68f375e861e5dda95f0d901
-cuvs @ file:///rapids/cuvs-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=4c405e02852347d7a3ee9fa21f088a44a081e4ddc7776ebee606454a9cb8e746
+blake3==1.0.8
+cachetools==7.0.5
+cbor2==5.9.0
+certifi==2026.2.25
+cffi==2.0.0
+charset-normalizer==3.4.6
+click==8.3.1
+cloudpickle==3.1.2
+compressed-tensors==0.13.0
+contourpy==1.3.3
+cryptography==46.0.5
+cuda-bindings==12.9.4
+cuda-pathfinder==1.4.3
+cuda-python==12.9.4
 cycler==0.12.1
-cyclopts==4.3.0
-cymem==2.0.11
-Cython==3.0.11
-dask @ file:///rapids/dask-2024.9.0-py3-none-any.whl#sha256=ceede9cfd418178a01ec3d11a0cde3f46678bd4a292ba84b57bbb401ce3f1cb8
-dask-cuda @ file:///rapids/dask_cuda-24.10.0-py3-none-any.whl#sha256=b5a903e770857bc9aa5bd70052be9db73888c9a5abf4ecf29375b0e6536a9e0b
-dask-cudf @ file:///rapids/dask_cudf-24.10.0-py3-none-any.whl#sha256=d042f1fd91b457c67accfca62236db72dd25eec864630d096408ea1e46af10fb
-dask-expr @ file:///rapids/dask_expr-1.1.14-py3-none-any.whl#sha256=86a59c51a84d88b6a653f5b4e2c578213a349a963206dcd29219e4826560ada2
-datasets==4.1.1
-dbus-python==1.3.2
-debugpy==1.8.12
-decorator==5.1.1
-defusedxml==0.7.1
-depyf==0.19.0
-dill==0.3.9
+datasets==4.8.3
+depyf==0.20.0
+dill==0.4.1
 diskcache==5.6.3
-distlib==0.3.9
-distributed @ file:///rapids/distributed-2024.9.0-py3-none-any.whl#sha256=d3a6407efffd3ab70a7f3a068be0f15c7ba36adc4fc666ed3d3505ced2c79cbe
-distributed-ucxx @ file:///rapids/distributed_ucxx-0.40.0-py3-none-any.whl#sha256=5992dab0263b337bb2784e75a77c0100b3c4faeebba35ecf22e663a73260883b
 distro==1.9.0
-dm-tree==0.1.8
 dnspython==2.8.0
-docstring_parser==0.17.0
-docutils==0.22.3
-einops==0.8.0
+docstring-parser==0.17.0
+einops==0.8.2
 email-validator==2.3.0
 evaluate==0.4.6
-exceptiongroup==1.3.1
-execnet==2.1.1
-executing==2.1.0
-expecttest==0.3.0
-fastapi==0.118.0
-fastapi-cli==0.0.13
-fastapi-cloud-cli==0.3.0
-fasteners @ file:///rapids/fasteners-0.19-py3-none-any.whl#sha256=758819cb5d94cdedf4e836988b74de396ceacb8e2794d21f82d131fd9ee77237
-fastjsonschema==2.21.1
-fastmcp==2.13.1
-fastrlock @ file:///rapids/fastrlock-0.8.2-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl#sha256=dcc1bf0ac8a194313cf6e645e300a8a379674ceed8e0b1e910a2de3e3c28989e
-filelock==3.16.1
-flash_attn @ file:///workspace/transformerengine/3rdparty/flashattn_internal
-Flask==3.1.2
-flatbuffers==25.9.23
-fonttools==4.55.3
-fqdn==1.5.1
-frozendict==2.4.6
-frozenlist @ file:///rapids/frozenlist-1.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=000a77d6034fbad9b6bb880f7ec073027908f1b40254b5d6f26210d2dab1240e
-fsspec @ file:///rapids/fsspec-2024.10.0-py3-none-any.whl#sha256=03b9a6785766a4de40368b88906366755e2819e758b83705c88cd7cb5fe81871
-gast==0.6.0
-gguf==0.17.1
-gitdb==4.0.12
-GitPython==3.1.45
-greenlet==3.1.1
-grpcio @ file:///rapids/grpcio-1.62.1-cp312-cp312-linux_x86_64.whl#sha256=202bd82224286eabd78c05a52cdf88a14296714a8f23eadfe79b3e63b9accb82
-h11==0.14.0
-hf-xet==1.1.10
-httpcore==1.0.7
-httptools==0.6.4
+fastapi==0.135.1
+fastapi-cli==0.0.24
+fastapi-cloud-cli==0.15.0
+fastar==0.9.0
+filelock==3.25.2
+flashinfer-python==0.6.6
+fonttools==4.62.1
+frozenlist==1.8.0
+fsspec==2026.2.0
+gguf==0.18.0
+googleapis-common-protos==1.73.0
+grpcio==1.78.0
+h11==0.16.0
+hf-xet==1.4.2
+httpcore==1.0.9
+httptools==0.7.1
 httpx==0.28.1
 httpx-sse==0.4.3
-huggingface-hub==0.35.1
-humanfriendly==10.0
-hypothesis==5.35.1
-idna==3.10
-importlib_metadata==8.5.0
-iniconfig==2.0.0
-intel-openmp==2021.4.0
+huggingface-hub==0.36.2
+idna==3.11
+ijson==3.5.0
+importlib-metadata==8.7.1
 interegular==0.3.3
-ipykernel==6.29.5
-ipython==8.31.0
-isoduration==20.11.0
-isort==5.13.2
-itsdangerous==2.2.0
-jaraco.classes==3.4.0
-jaraco.context==6.0.1
-jaraco.functools==4.3.0
-jedi==0.19.2
-jeepney==0.9.0
-Jinja2==3.1.6
-jiter==0.11.0
-joblib==1.4.2
-json5==0.10.0
-jsonpointer==3.0.0
-jsonschema==4.23.0
-jsonschema-path==0.3.4
-jsonschema-specifications==2024.10.1
-jupyter-events==0.12.0
-jupyter-lsp==2.2.5
-jupyter-telemetry==0.1.0
-jupyter_client==8.6.3
-jupyter_core==5.7.2
-jupyter_server==2.15.0
-jupyter_server_terminals==0.5.3
-jupyterhub==4.1.5
-jupyterlab==4.1.8
-jupyterlab_nvdashboard==0.13.0a7
-jupyterlab_pygments==0.3.0
-jupyterlab_server==2.27.3
-jupytext==1.16.6
-keyring==25.7.0
-kiwisolver==1.4.8
-kvikio @ file:///rapids/kvikio-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=c85c86aedd2416999f7a1a438b895e47ccd6e6328ab16713216d625778cda4c7
-langcodes==3.5.0
-language_data==1.3.0
+jinja2==3.1.6
+jiter==0.13.0
+jmespath==1.1.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+kiwisolver==1.5.0
 lark==1.2.2
-lazy_loader==0.4
-Levenshtein==0.27.3
-libcudf @ file:///rapids/libcudf-24.10.0-py3-none-linux_x86_64.whl#sha256=42edad103727882f7bab25e00bd799d2e3d13ebd010a93701970e7d617ee46e1
-libkvikio @ file:///rapids/libkvikio-24.10.0-py3-none-linux_x86_64.whl#sha256=ffa921b56045e7782eb44b33d16ebc1557d0ef7296956447f85ff534cfe7085e
-librmm @ file:///rapids/librmm-24.10.0-py3-none-linux_x86_64.whl#sha256=311a33a771fa4051f8b61b1c6446390efd08670c118b51c243bb81d0c9ea45ad
-librosa==0.10.1
-libucxx @ file:///rapids/libucxx-0.40.0-py3-none-linux_x86_64.whl#sha256=68b2ff30f9be977b498be1f5a93445c30bbdebb842c1d7a9d24b8eaadbbb16ad
-lightning-thunder==0.2.0.dev0
-lightning-utilities==0.12.0.dev0
-lintrunner==0.12.7
-llguidance==0.7.30
+levenshtein==0.27.3
+llguidance==1.3.0
 llvmlite==0.44.0
 lm-format-enforcer==0.11.3
-locket @ file:///rapids/locket-1.0.0-py2.py3-none-any.whl#sha256=b6c819a722f7b6bd955b80781788e4a66a55628b858d347536b7e81325a3a5e3
-looseversion==1.3.0
-Mako==1.3.9
-marisa-trie==1.2.1
-Markdown==3.7
-markdown-it-py==3.0.0
-MarkupSafe==3.0.2
-matplotlib==3.10.0
-matplotlib-inline==0.1.7
-mcp==1.22.0
-mdit-py-plugins==0.4.2
+loguru==0.7.3
+markdown-it-py==4.0.0
+markupsafe==3.0.3
+matplotlib==3.10.8
+mcp==1.26.0
 mdurl==0.1.2
-mistral_common==1.8.5
-mistune==3.1.0
-mkl==2021.1.1
-mkl-devel==2021.1.1
-mkl-include==2021.1.1
-mock==5.1.0
-more-itertools==10.8.0
+mistral-common==1.10.0
+model-hosting-container-standards==0.1.14
 mpmath==1.3.0
-msgpack==1.1.0
-msgspec==0.19.0
-multidict @ file:///rapids/multidict-6.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=4b820514bfc0b98a30e3d85462084779900347e4d49267f747ff54060cc33925
-multiprocess==0.70.16
-murmurhash==1.0.12
-mypy-extensions==1.0.0
-nbclient==0.10.2
-nbconvert==7.16.5
-nbformat==5.10.4
-nest-asyncio==1.6.0
-networkx==3.4.2
-ninja==1.11.1.3
-notebook==7.1.2
-notebook_shim==0.2.4
+msgspec==0.20.0
+multidict==6.7.1
+multiprocess==0.70.19
+networkx==3.6.1
+ninja==1.13.0
 numba==0.61.2
-numcodecs @ file:///rapids/numcodecs-0.13.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=da2230484e6102e5fa3cc1a5dd37ca1f92dfbd183d91662074d6f7574e3e8f53
 numpy==2.2.6
-nvfuser==0.2.23a0+6627725
 nvidia-cublas-cu12==12.8.4.1
 nvidia-cuda-cupti-cu12==12.8.90
 nvidia-cuda-nvrtc-cu12==12.8.93
 nvidia-cuda-runtime-cu12==12.8.90
 nvidia-cudnn-cu12==9.10.2.21
-nvidia-cudnn-frontend @ file:///opt/pytorch/lightning-thunder/tmp/cudnn_frontend
+nvidia-cudnn-frontend==1.18.0
 nvidia-cufft-cu12==11.3.3.83
 nvidia-cufile-cu12==1.13.1.3
 nvidia-curand-cu12==10.3.9.90
 nvidia-cusolver-cu12==11.7.3.90
 nvidia-cusparse-cu12==12.5.8.93
 nvidia-cusparselt-cu12==0.7.1
-nvidia-dali-cuda120==1.45.0
-nvidia-ml-py==12.570.86
-nvidia-modelopt==0.21.0
-nvidia-nccl-cu12==2.27.3
-nvidia-nvimgcodec-cu12==0.3.0.5
+nvidia-cutlass-dsl==4.4.2
+nvidia-cutlass-dsl-libs-base==4.4.2
+nvidia-ml-py==13.595.45
+nvidia-nccl-cu12==2.27.5
 nvidia-nvjitlink-cu12==12.8.93
+nvidia-nvshmem-cu12==3.4.5
 nvidia-nvtx-cu12==12.8.90
-nvidia-pyindex==1.0.9
-nvtx @ file:///rapids/nvtx-0.2.5-cp312-cp312-linux_x86_64.whl#sha256=f5e48dbafa7ad145660502e79d381c308dc379dd7857620dd5cd38051baa3e4c
-nx-cugraph @ file:///rapids/nx_cugraph-24.10.0-py3-none-any.whl#sha256=667c45b307e614bf380874950ac0d1b11100b55032b903130dda1246100b60f4
-oauthlib==3.2.2
-onnx @ file:///opt/pytorch/pytorch/third_party/onnx
-onnxruntime==1.23.2
-openai==2.1.0
-openai-harmony==0.0.4
-openapi-pydantic==0.5.1
-opencv @ file:///opencv-4.10.0/modules/python/package
-opencv-python-headless==4.12.0.88
-opt_einsum==3.4.0
-optree==0.14.0
-outlines_core==0.2.11
-overrides==7.7.0
-packaging @ file:///rapids/packaging-23.2-py3-none-any.whl#sha256=8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7
-pamela==1.2.0
-pandas @ file:///rapids/pandas-2.2.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=eee3a87076c0756de40b05c5e9a6069c035ba43e8dd71c379e68cab2c20f16ad
-pandocfilters==1.5.1
-parso==0.8.4
-partd @ file:///rapids/partd-1.4.2-py3-none-any.whl#sha256=978e4ac767ec4ba5b86c6eaa52e5a2a3bc748a2ca839e8cc798f1cc6ce6efb0f
-partial-json-parser==0.2.1.1.post6
-pathable==0.4.4
-pathspec==0.12.1
-pathvalidate==3.3.1
-peft==0.17.1
-pexpect==4.9.0
-pillow==11.1.0
-platformdirs==4.3.6
-pluggy==1.5.0
-ply @ file:///rapids/ply-3.11-py2.py3-none-any.whl#sha256=096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce
-polars @ file:///rapids/polars-1.8.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=67c1e448d6e38697650b22dd359f13c40b567c0b66686c8602e4367400e87801
-polygraphy==0.49.16
-pooch==1.8.2
-preshed==3.0.9
+openai==2.24.0
+openai-harmony==0.0.8
+opencv-python-headless==4.13.0.92
+opentelemetry-api==1.40.0
+opentelemetry-exporter-otlp==1.40.0
+opentelemetry-exporter-otlp-proto-common==1.40.0
+opentelemetry-exporter-otlp-proto-grpc==1.40.0
+opentelemetry-exporter-otlp-proto-http==1.40.0
+opentelemetry-proto==1.40.0
+opentelemetry-sdk==1.40.0
+opentelemetry-semantic-conventions==0.61b0
+opentelemetry-semantic-conventions-ai==0.5.0
+outlines-core==0.2.11
+packaging==26.0
+pandas==3.0.1
+partial-json-parser==0.2.1.1.post7
+pillow==12.1.1
+prometheus-client==0.24.1
 prometheus-fastapi-instrumentator==7.1.0
-prometheus_client==0.21.1
-prompt_toolkit==3.0.48
-propcache @ file:///rapids/propcache-0.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=647894f5ae99c4cf6bb82a1bb3a796f6e06af3caa3d32e26d2350d0e3e3faf24
-protobuf==4.24.4
-psutil @ file:///rapids/psutil-6.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=498c6979f9c6637ebc3a73b3f87f9eb1ec24e1ce53a7c5173b8508981614a90b
-ptyprocess==0.7.0
-PuLP==2.9.0
-pure_eval==0.2.3
+propcache==0.4.1
+protobuf==6.33.6
+psutil==7.2.2
 py-cpuinfo==9.0.0
-py-key-value-aio==0.2.8
-py-key-value-shared==0.2.8
-pyarrow==21.0.0
-pybase64==1.4.2
-pybind11==2.13.6
-pybind11_global==2.13.6
-pycocotools @ git+https://github.com/nvidia/cocoapi.git@08350a157b41f0755a536441b5abec89ab934c5b#subdirectory=PythonAPI
-pycountry==24.6.1
-pycparser==2.22
-pydantic==2.11.9
-pydantic-extra-types==2.10.5
-pydantic-settings==2.12.0
-pydantic_core==2.33.2
-Pygments @ file:///rapids/pygments-2.18.0-py3-none-any.whl#sha256=b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a
-PyGObject==3.48.2
-pyjnius==1.7.0
-PyJWT==2.10.1
-pylibcudf @ file:///rapids/pylibcudf-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=d75c22943f7776d9ea62c76e5504a48c031a8c121b0bf1c25f1f7acaa65bbbea
-pylibcugraph @ file:///rapids/pylibcugraph-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=08845e378f364f3a9718ef66824d9cb07f0d0b974838b5bc4d002d4d605bcfc1
-pylibcugraphops @ file:///rapids/pylibcugraphops-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=07cdb5433a2b1ec31f0dde3a4248885395a9064e22bf1bd6f1ea7a97d9f431a4
-pylibraft @ file:///rapids/pylibraft-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=f800989a15d7d38d870354ac0cda1f3fce09fcd8d697cd300addcd4019bddd71
-pylibwholegraph @ file:///rapids/pylibwholegraph-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=45cf135b515ce44db42369548cc3b01075bfec75b1366c7fa84a18d6b5b5114b
-pynvjitlink @ file:///rapids/pynvjitlink-0.3.0-cp312-cp312-linux_x86_64.whl#sha256=0d99c5642edd79743d9d3c77dd8624f3a69b23b212504ab282a7b2336249b348
-pynvml==12.0.0
-pyparsing==3.2.1
-pyperclip==1.11.0
-pyserini==1.3.0
-pytest==8.1.1
-pytest-flakefinder==1.1.0
-pytest-rerunfailures==15.0
-pytest-shard==0.1.2
-pytest-xdist==3.6.1
+pyarrow==23.0.1
+pybase64==1.4.3
+pycountry==26.2.16
+pycparser==3.0
+pydantic==2.12.5
+pydantic-core==2.41.5
+pydantic-extra-types==2.11.1
+pydantic-settings==2.13.1
+pygments==2.19.2
+pyjwt==2.12.1
+pyparsing==3.3.2
 python-dateutil==2.9.0.post0
-python-dotenv==1.1.1
-python-hostlist==2.2.1
-python-json-logger==3.2.1
-python-multipart==0.0.20
-pytorch-model-summary==0.1.2
-pytorch-triton @ file:///tmp/dist/pytorch_triton-3.1.0%2Bcf34004b8.internal-cp312-cp312-linux_x86_64.whl#sha256=83b298d469e154a23887039c00ed0f83991dd0ff8545b5d8e8c8328572d6c596
-pytrec_eval-terrier==0.5.9
-pytz @ file:///rapids/pytz-2023.4-py2.py3-none-any.whl#sha256=f90ef520d95e7c46951105338d918664ebfd6f1d995bd7d153127ce90efafa6a
-PyYAML==6.0.2
-pyzmq==26.2.0
-raft-dask @ file:///rapids/raft_dask-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=9094b50da57c91017b6bf791880e2cca60be9bf614e8765bfeecd5ed994769dc
-RapidFuzz==3.14.3
-rapids-dask-dependency @ file:///rapids/rapids_dask_dependency-24.10.0a0-py3-none-any.whl#sha256=89e4bdabbdaa5cd6d15a2d1b31342d8cd97bcac9dec6b2f1f83bc9375601b6ec
-ray==2.49.2
-referencing==0.36.1
-regex==2024.11.6
-requests==2.32.3
-rfc3339-validator==0.1.4
-rfc3986-validator==0.1.1
-rich==13.9.4
-rich-rst==1.3.2
-rich-toolkit==0.15.1
-rignore==0.7.0
-rmm @ file:///rapids/rmm-24.10.0-cp312-cp312-linux_x86_64.whl#sha256=e1a3b5e7e34d7d70fdf0e0e8c302eb5a1017f72e5072ee598de0257688d61c9f
-rouge-metric==1.0.1
-rpds-py==0.22.3
-ruamel.yaml==0.18.10
-ruamel.yaml.clib==0.2.12
-safetensors==0.5.2
-scikit-learn==1.6.1
-scikit-sparse==0.4.15
-scipy @ file:///rapids/scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=8f9ea80f2e65bdaa0b7627fb00cbeb2daf163caa015e59b7516395fe3bd1e066
-SecretStorage==3.5.0
-Send2Trash==1.8.3
-sentence-transformers==5.1.2
+python-dotenv==1.2.2
+python-json-logger==4.0.0
+python-multipart==0.0.22
+pyyaml==6.0.3
+pyzmq==27.1.0
+quack-kernels==0.3.5
+rapidfuzz==3.14.3
+referencing==0.37.0
+regex==2026.2.28
+requests==2.32.5
+rich==14.3.3
+rich-toolkit==0.19.7
+rignore==0.7.6
+rpds-py==0.30.0
+safetensors==0.7.0
 sentencepiece==0.2.1
-sentry-sdk==2.39.0
+sentry-sdk==2.55.0
 setproctitle==1.3.7
-setuptools==79.0.1
+setuptools==80.10.2
 shellingham==1.5.4
-six @ file:///rapids/six-1.17.0-py2.py3-none-any.whl#sha256=4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274
-smart-open==7.1.0
-smmap==5.0.2
+six==1.17.0
 sniffio==1.3.1
-sortedcontainers==2.4.0
-soundfile==0.13.0
-soupsieve==2.6
-soxr==0.5.0.post1
-spacy==3.7.5
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
-SQLAlchemy==2.0.38
-srsly==2.5.1
-sse-starlette==3.0.3
-stack-data==0.6.3
-starlette==0.48.0
+sse-starlette==3.3.3
+starlette==0.52.1
+supervisor==4.3.0
 sympy==1.14.0
-tabulate==0.9.0
-tbb==2021.13.1
-tblib @ file:///rapids/tblib-3.0.0-py3-none-any.whl#sha256=80a6c77e59b55e83911e1e607c649836a69c103963c5f28a46cbeef44acf8129
-tensorboard==2.16.2
-tensorboard-data-server==0.7.2
-tensorrt @ file:///workspace/TensorRT-10.8.0.40/python/tensorrt-10.8.0.40-cp312-none-linux_x86_64.whl#sha256=7e07dfa2b439838055d3e45064ef22dc0fdcf3469ef08dd26cba2bf482b97b7a
-terminado==0.18.1
-thinc==8.2.5
-threadpoolctl==3.5.0
-thriftpy2 @ file:///rapids/thriftpy2-0.4.20-cp312-cp312-linux_x86_64.whl#sha256=8f341d32196f66ffd3953b0da0f782380b8425d04e40f4edbe16fc0a05b44301
-tiktoken==0.11.0
-tinycss2==1.4.0
-tokenizers==0.22.1
-toolz @ file:///rapids/toolz-1.0.0-py3-none-any.whl#sha256=292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236
-torch==2.8.0
-torch-struct==0.5
-torch_tensorrt @ file:///opt/pytorch/torch_tensorrt/dist/torch_tensorrt-2.6.0a0-cp312-cp312-linux_x86_64.whl#sha256=f4458cd5d2743e7862e3962685c0288550162dd06de2a633554c7640485ffc5a
-torchaudio==2.8.0
-torchprofile==0.0.4
-torchvision==0.23.0
-tornado==6.4.2
-tqdm==4.67.1
-traitlets==5.14.3
-transformer_engine @ file:///workspace/transformerengine
-transformers==4.56.2
-treelite @ file:///rapids/treelite-4.3.0-py3-none-linux_x86_64.whl#sha256=fcb1f67e31ed6a5d3084a2e7e25a7baa5212698204a0165ef738bb4541dae596
-triton==3.4.0
-trl==0.23.0
-typer==0.15.1
-types-dataclasses==0.6.6
-types-python-dateutil==2.9.0.20241206
+tabulate==0.10.0
+tiktoken==0.12.0
+tokenizers==0.22.2
+torch==2.10.0
+torch-c-dlpack-ext==0.1.5
+torchaudio==2.10.0
+torchvision==0.25.0
+tqdm==4.67.3
+transformers==4.57.6
+triton==3.6.0
+typer==0.24.1
+typing-extensions==4.15.0
 typing-inspection==0.4.2
-typing_extensions==4.15.0
-tzdata @ file:///rapids/tzdata-2024.2-py2.py3-none-any.whl#sha256=a48093786cdcde33cad18c2555e8532f34422074448fbc874186f0abd79565cd
-ucx-py @ file:///rapids/ucx_py-0.40.0-cp312-cp312-linux_x86_64.whl#sha256=a9e87a355dce76763417cdef84e766227bd86439cce7bc932c2e8a388f352d25
-ucxx @ file:///rapids/ucxx-0.40.0-cp312-cp312-linux_x86_64.whl#sha256=63ef9a961feaf0828170e4d9ddc8d587ba82194cfbf8976b7729384094b10f9c
-uri-template==1.3.0
-urllib3 @ file:///rapids/urllib3-2.0.7-py3-none-any.whl#sha256=fdb6d215c776278489906c2f8916e6e7d4f5a9b602ccbcfdf7f016fc8da0596e
-uvicorn==0.37.0
-uvloop==0.21.0
-virtualenv==20.29.2
-vllm==0.10.2
-wandb==0.22.1
-wasabi==1.1.3
-watchfiles==1.1.0
-wcwidth==0.2.13
-weasel==0.4.1
-webcolors==24.11.1
-webencodings==0.5.1
-websocket-client==1.8.0
-websockets==15.0.1
-Werkzeug==3.1.3
-wheel==0.45.1
-wrapt==1.17.2
-xdoctest==1.0.2
-xformers==0.0.32.post1
-xgboost @ file:///rapids/xgboost-2.1.1-py3-none-linux_x86_64.whl#sha256=6ac97bae1e6a764e6e1ca487a835da63435bf00f88a3bdbccf8a3c12d2811d0c
-xgrammar==0.1.23
-xxhash==3.5.0
-yarl @ file:///rapids/yarl-1.18.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=00e5a1fea0fd4f5bfa7440a47eff01d9822a65b4488f7cff83155a0f31a2ecba
-zarr @ file:///rapids/zarr-2.18.3-py3-none-any.whl#sha256=b1f7dfd2496f436745cdd4c7bcf8d3b4bc1dceef5fdd0d589c87130d842496dd
-zict @ file:///rapids/zict-3.0.0-py2.py3-none-any.whl#sha256=5796e36bd0e0cc8cf0fbc1ace6a68912611c1dbd74750a3f3026b9b9d6a327ae
-zipp==3.21.0
+urllib3==2.6.3
+uvicorn==0.42.0
+uvloop==0.22.1
+vllm==0.18.0
+watchfiles==1.1.1
+websockets==16.0
+xgrammar==0.1.32
+xxhash==3.6.0
+yarl==1.23.0
+zipp==3.23.0
