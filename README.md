@@ -2,7 +2,7 @@
 
 <div align="center">
     <br>
-    <img align="center" src="./geobenchllm_logo" alt="GeoBenchLLM" width="400"/>
+    <img align="center" src="./geobenchllm_logo.png" alt="GeoBenchLLM" width="400"/>
     <br><br>
     <strong>A comprehensive benchmark for probing LLM on geo-related tasks</strong>
     <br><br>
